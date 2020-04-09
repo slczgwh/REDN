@@ -1,3 +1,6 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/downstream-model-design-of-pre-trained/relation-extraction-on-nyt)](https://paperswithcode.com/sota/relation-extraction-on-nyt?p=downstream-model-design-of-pre-trained)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/downstream-model-design-of-pre-trained/relation-extraction-on-semeval-2010-task-8)](https://paperswithcode.com/sota/relation-extraction-on-semeval-2010-task-8?p=downstream-model-design-of-pre-trained)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/downstream-model-design-of-pre-trained/relation-extraction-on-webnlg)](https://paperswithcode.com/sota/relation-extraction-on-webnlg?p=downstream-model-design-of-pre-trained)
 # REDN
 
 This is the prototype code for Relation Extraction Downstream 
