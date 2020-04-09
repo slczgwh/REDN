@@ -1,7 +1,7 @@
 # REDN
 
 This is the prototype code for Relation Extraction Downstream 
-Network of pre-trained language model, supporting our paper *Downstream Model Design of Pre-trained Language Model for Relation Extraction Task*.
+Network of pre-trained language model, supporting our paper [*Downstream Model Design of Pre-trained Language Model for Relation Extraction Task*.](https://arxiv.org/abs/2004.03786)
 
 Part of this code are revised based on [OPENNRE](https://github.com/thunlp/OpenNRE).
 
