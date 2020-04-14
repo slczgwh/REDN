@@ -69,7 +69,7 @@ def train(dataset_name, batch_size=50, num_workers=2, max_epoch=15, lr=3e-5, wei
             list(map(lambda x: x.set_max_words(100), dataset))
             list(map(lambda x: x.remove_na(), dataset))
             # list(map(lambda x: x.remove_repeat(), dataset))
-            # list(map(lambda x: x.char_idx_to_word_idx(), dataset))
+            list(map(lambda x: x.char_idx_to_word_idx(), dataset))
             for d in dataset:
                 d.NA_id = -1
         if dataset_name in ["semeval_1"]:
