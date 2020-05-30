@@ -21,6 +21,11 @@ Run example/redn_trainer.py with args **dataset** and **mode**. **dataset** can 
 python redn_trainer semeval t
 ```
 
+## Another Branch
+
+We establish a new branch based on [Allennlp](https://github.com/allenai/allennlp)
+. It will be more friendly and powerful while using in real projects, though developers should spend sometime to write dataset-readers.
+
 ## Logs
 
 If you are not able to run these codes, you can also check all the logs in ./logs.
