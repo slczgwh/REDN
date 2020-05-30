@@ -23,7 +23,7 @@ python redn_trainer semeval t
 
 ## Another Branch
 
-We establish a new branch based on [Allennlp](https://github.com/allenai/allennlp)
+We establish a [new branch](https://github.com/slczgwh/REDN/tree/allennlp-based) based on [Allennlp](https://github.com/allenai/allennlp)
 . It will be more friendly and powerful while using in real projects, though developers should spend sometime to write dataset-readers.
 
 ## Logs
