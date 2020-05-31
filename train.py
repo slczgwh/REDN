@@ -4,11 +4,11 @@ import os
 import sys
 from allennlp.commands import main  # pylint: disable=wrong-import-position
 
-from aarcnlp import models, training
-import aarcnlp.data.dataset_readers
-import aarcnlp.models
-import aarcnlp.models.redn
-import aarcnlp.predictors
+from redn import models, training
+import redn.data.dataset_readers
+import redn.models
+import redn.models.redn
+import redn.predictors
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(os.path.join(__file__, os.pardir))))
 logging.basicConfig(format='%(asctime)s - %(levelname)s - %(name)s - %(message)s', level=logging.INFO)

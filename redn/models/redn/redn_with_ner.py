@@ -7,9 +7,9 @@ from allennlp.data import Vocabulary
 from allennlp.models.model import Model
 from allennlp.training.metrics import SpanBasedF1Measure, FBetaMeasure
 
-from aarcnlp.training.metrics.redn_f1 import F1Metric
-from aarcnlp.models.redn.redn_loss import RednLoss
-from aarcnlp.models.redn.multi_head_attn_score import MultiHeadAttentionScore
+from redn.training.metrics.redn_f1 import F1Metric
+from redn.models.redn.redn_loss import RednLoss
+from redn.models.redn.multi_head_attn_score import MultiHeadAttentionScore
 
 from pytorch_transformers import BertModel
 
