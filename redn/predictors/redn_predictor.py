@@ -9,15 +9,8 @@ from typing import List, Iterator, Optional
 import json
 
 
-@Predictor.register('redn_with_ner')
-class RednWithNerPredictor(Predictor):
-    """
-    Predictor for any model that takes in a sentence and returns
-    a single set of tags for it.  In particular, it can be used with
-    the :class:`~allennlp.models.crf_tagger.CrfTagger` model
-    and also
-    the :class:`~allennlp.models.simple_tagger.SimpleTagger` model.
-    """
+@Predictor.register('redn')
+class RednPredictor(Predictor):
 
     def __init__(self, model: Model, dataset_reader: DatasetReader) -> None:
         super().__init__(model, dataset_reader)
@@ -30,10 +23,6 @@ class RednWithNerPredictor(Predictor):
         return self._dataset_reader.text_to_instance(json_dict["token"])
 
     def load_line(self, line: str) -> JsonDict:  # pylint: disable=no-self-use
-        """
-        If your inputs are not in JSON-lines format (e.g. you have a CSV)
-        you can override this function to parse them correctly.
-        """
         return json.loads(line)
 
 

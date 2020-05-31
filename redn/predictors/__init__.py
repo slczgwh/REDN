@@ -1,0 +1,1 @@
+from .redn_predictor import RednPredictor

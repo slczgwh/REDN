@@ -1,19 +1,17 @@
-#这里默认指定了中文版本的bert，根据数据需要选择自己的bert版本。也可以换成其他bert的变种，如albert，roberta之类
+# bert config
 local model_path = "/mnt/nas1/NLP/pretrained_model/bert/bert_torch/uncased_L-12_H-768_A-12";
-# local pretrain_transforms_hidden = 768;  #分类任务这里可以不用设置，取默认值即可
 local do_lowercase = true;
 local namespace = "token";
 
-#数据文件路径，根据自己的文件路径设置
+# data path
 local train_data_path = "/mnt/nas1/pare/benchmark1/semeval/train.json";
 local validation_data_path = "/mnt/nas1/pare/benchmark1/semeval/dev.json";
 local test_data_path = "/mnt/nas1/pare/benchmark1/semeval/test.json";
 
-
-#根据实际情况自行设置
+# training config
 local batch_size = 64;
 local num_epochs = 50;
-local patience = 3;
+local patience = 0;
 
 {
   "dataset_reader": {

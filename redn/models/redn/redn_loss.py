@@ -21,6 +21,4 @@ class RednLoss(nn.Module):
         pohl = pohl.scatter(1, s_index, adj.unsqueeze(dim=1)).float()
 
         loss = ((F.binary_cross_entropy(score, pohl, reduction="none") * entity_mask).sum(dim=(2, 3))[pohl_mask] / entity_sum[pohl_mask]).mean()
-        if loss.item() < 0:
-            print("debug")
         return loss

@@ -18,7 +18,7 @@ Set your own paths in example/configs.py, including pre-trained model path, root
 Run example/redn_trainer.py with args **dataset** and **mode**. **dataset** can be nyt10, semeval or webnlg.
  **mode** can be t for training and e for evaluation. For example ,to train SemEval, try
  ```
-python redn_trainer semeval t
+python train.py train -s /your/output/path -f redn/training_configs/redn-{datasset}.jsonnet
 ```
 
 ## Another Branch
